@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+    <script src="https://api-maps.yandex.ru/v3/?apikey=e6ae471f-44b7-450f-96e9-ac89c5e64b83&lang=ru_RU"></script>
+</head>
+<body>
+
+    <header class="section-date">
+        <video class="section-date-video" src="./video/fce3489f3a23812f218ed894752b8469.mp4" muted loop autoplay></video>
+        <div class="section-date-wrapper h-100 w-100 d-flex justify-content-center align-items-center text-white">
+            <div class="container">
+                <div class="col-md-12">
+                    <div class="section-date-content text-center">
+                        <h2>Александр | Анастасия</h2>
+                        <h1>09.09.2025</h1>
+                        <h2>Приглашение на свадьбу</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="section-invite">
+        <div class="container">
+            <div class="row position-relative">
+                <div class="col-md-5">
+                   <div class="date-img-wrapper">
+                       <img class="date-image" src="./img/foto.jpg" alt="">
+                   </div>
+                </div>
+                <div class="offset-1 col-md-5 d-flex justify-content-center flex-column">
+                    <h3 class="section-heading">ДОРОГИЕ ДРУЗЬЯ!</h3>
+                    <p class="section-description">Один день в этом году будет для нас особенным, и мы хотим провести его в кругу близких людей. С большим удовольствие пригашаем вас на знаменательный праздник - нашу свадьбу.</p>
+                </div>
+                <div class="date">
+                    <span>09.09.2025</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section-location">
+        <div class="section-location-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <h3 class="section-heading">Локация</h3>
+
+                        <p class="section-description mb-3">Мы решили провести свадебный день на загородной площадке "Лесная рапсодия".</p>
+                        <p class="section-description">Ленинградская обл., пос. Ильичево, Линтульская аллея, дом 3.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="map-wrapper">
+                            <div id="map" style="width: 560px; height: 340px"></div>
+                            <!-- API yandex map -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-timing">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="timing-image-wrapper">
+                        <img class="timing-image" src="./img/foto.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="timing-content">
+
+                        <ul class="timing-list">
+                            <li>
+                                <h3 class="section-heading">ТАЙМИНГ ДНЯ</h3>
+                            </li>
+                            <li class="timing-time">
+                                14:30 - Трансфер
+                            </li>
+                            <li class="timing-description">
+                                Мы организуем трансфер от метро Парнас, который доставит вас прямо к месту проведения мероприятия.
+                            </li>
+                            <li class="timing-time">
+                                15:30 - Фуршет
+                            </li>
+                            <li class="timing-description">
+                                Вы сможете насладиться закусками, напитками и общением с гостями.
+                            </li>
+                            <li class="timing-time">
+                                16:00 - Церемония
+                            </li>
+                            <li class="timing-description">
+                                Мы будем рады разделить с вами важный момент создания нашей семьи.
+                            </li>
+                            <li class="timing-time">
+                                17:00 - Банкет
+                            </li>
+                            <li class="timing-description">
+                                На праздничном ужине будет не только вкусно, но и очень весело. В программе вечера запланировано много танцев, развлечений и поздравлений.
+                            </li>
+                            <li class="timing-time">
+                                23:30 - Завершение
+                            </li>
+                            <li class="timing-description">
+                                Надеемся, этот праздник принесет вам массу положительных эмоций и запомнится на долгое время.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-dress-code">
+        <div class="container">
+            <h3 class="section-heading">Dress code</h3>
+            <div class="row mb-2">
+                <div class="col-md-6">
+                    <p class="section-description">Нам будет особенно приятно видеть вас в нарядах цветовой гаммы нашей свадьбы: </p>
+                </div>
+                <div class="col-md-6">
+                    <ul class="dress-code-color-list">
+                        <li class="dress-code-color dress-code-color__1"></li>
+                        <li class="dress-code-color dress-code-color__2"></li>
+                        <li class="dress-code-color dress-code-color__3"></li>
+                        <li class="dress-code-color dress-code-color__4"></li>
+                        <li class="dress-code-color dress-code-color__5"></li>
+                        <li class="dress-code-color dress-code-color__6"></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3 col-6">
+                    <div class="dress-code__image">
+                        <img class="w-100" src="./img/model.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="dress-code__image">
+                        <img class="w-100" src="./img/model.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="dress-code__image">
+                        <img class="w-100" src="./img/model.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="dress-code__image">
+                        <img class="w-100" src="./img/model.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-wishes">
+        <div class="container">
+            <h3 class="section-heading">Пожелания</h3>
+            <div class="row row-gap-4">
+                <div class="col-md-6">
+                    <div class="wishes-card">
+                        <p class="section-description">Просим вас не дарить нам цветы - мы не успеем насладиться их красотой до отъезда. А вот бутылочке вина для нашей семейной винотеки будем очень рады!</p>
+                        <div class="number-wishes-card">1</div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="wishes-card">
+                        <p class="section-description">Будем благодарны, если вы воздержитесь от криков "Горько", ведь поцелуй - знак выражения чувств, он не может быть по заказу.</p>
+                        <div class="number-wishes-card">2</div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="wishes-card">
+                        <p class="section-description">Для наших маленьких гостей мы предусмотрели отдельный зал и аниматоров, чтобы родители могли насладиться праздником.</p>
+                        <div class="number-wishes-card">3</div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="wishes-card">
+                        <p class="section-description">Если вы хотите подарить ценный и нужный нам подарок, то просим уменьшить его габариты до размера почтового конверта</p>
+                        <div class="number-wishes-card">4</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-contacts">
+        <div class="container">
+            <h3 class="section-heading">Контакты</h3>
+            <p class="section-description col-md-6 pe-5">В день свадьбы мы будем немного заняты, поэтому по всем вопросам можете обращаться к нашим помощникам.</p>
+
+            <div class="row">
+                <div class="col-md-6 contacts-card">
+                    <div class="contacts-card-wrapper">
+                        <img src="" alt="">
+                        <div class="row contacts-card-content">
+                            <div class="col-md-6">
+                                <p class="name">Марина</p>
+                                <p class="contact-post">Организатор</p>
+                            </div>
+                            <div class="col-md-6">
+                               <button class="contacts-btn btn btn-custom">Позвонить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 contacts-card">
+                    <div class="contacts-card-wrapper">
+                        <img src="" alt="">
+                        <div class="row contacts-card-content">
+                            <div class="col-md-6">
+                                <p class="name">Анна</p>
+                                <p class="contact-post">Координатор</p>
+                            </div>
+                            <div class="col-md-6">
+                                <button class="contacts-btn btn btn-custom">Позвонить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-tg-contact">
+        <div class="container">
+            <div class="tg-contact-wrapper">
+                <div class="tg-contact-content">
+                    <h3 class="section-heading">Телеграм-чат</h3>
+                    <p class="section-description col-md-10">Дорогие друзья, мы создали телеграм-чат нашего праздника, где можно будет узнать дополнительную информацию, поделиться фотографиями и видео со свадьбы, а так же ближе познакомиться с гостями.</p>
+                </div>
+                <div class="tg-contact-button">
+                    <button class="btn btn-custom">Открыть в Telegram</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-timer">
+        <div class="section-location-wrapper">
+            <div class="container">
+                <div class="d-flex justify-content-center align-items-center flex-column">
+                    <h3 class="section-heading">До свадьбы осталось</h3>
+                    <div class="timer w-100">
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-md-8">
+                                <div class="row">
+                                    <div class="col d-flex justify-content-center align-items-center">
+                                        <div class="timer-block-time text-center">
+                                            <span class="timer-nums" id="days">00</span>
+                                            <span class="timer-words" id="days-text"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col d-flex justify-content-center align-items-center">
+                                        <div class="timer-block-time text-center">
+                                            <span class="timer-nums" id="hours">00</span>
+                                            <span class="timer-words" id="hours-text"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col d-flex justify-content-center align-items-center">
+                                        <div class="timer-block-time text-center">
+                                            <span class="timer-nums" id="minutes">0</span>
+                                            <span class="timer-words" id="minutes-text"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col d-flex justify-content-center align-items-center">
+                                        <div class="timer-block-time text-center">
+                                            <span class="timer-nums" id="seconds">00</span>
+                                            <span class="timer-words" id="seconds-text"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-form">
+        <div class="container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <form action="">
+                           <h3 class="section-heading">Анкета гостя</h3>
+                            <div class="form">
+
+                                <label class="form-group">
+                                    <p class="section-description">Ваши имя и фамилия</p>
+                                    <input class="text-input" type="text" placeholder="Анна Иванова">
+                                </label>
+
+                                <div class="form-group">
+                                    <p class="section-description">Подтверждаете ли вы своё присутствие?</p>
+                                    <label class="custom-radio">
+                                        <input type="radio" checked="checked" name="existence">
+                                        <span>Да</span>
+                                    </label>
+                                    <label class="custom-radio">
+                                        <input type="radio" name="existence">
+                                        <span>Нет</span>
+                                    </label>
+                                </div>
+
+                                <div class="form-group">
+                                    <p class="section-description">Нужна ли помощь с размещением в Санкт-Петербурге?</p>
+                                    <label class="custom-radio">
+                                        <input type="radio" checked="checked" name="helpPiter">
+                                        <span>Да</span>
+                                    </label>
+                                    <label class="custom-radio">
+                                        <input type="radio" name="helpPiter">
+                                        <span>Нет</span>
+                                    </label>
+                                </div>
+
+                                <label class="form-group">
+                                    <p class="section-description">Есть ли у вас аллергия на какие-либо продукты</p>
+                                    <input class="text-input" type="text" placeholder="Орехи, клубника...">
+                                </label>
+
+                                <div class="form-group">
+                                    <p class="section-description">Какой вид алкоголя вы предпочитаете</p>
+
+                                    <div>
+                                        <label class="custom-checkbox">
+                                            <input type="checkbox" checked="checked" name="alcohol">
+                                            <span>Вино</span>
+                                        </label>
+                                        <label class="custom-checkbox">
+                                            <input type="checkbox" name="alcohol">
+                                            <span>Шампанское</span>
+                                        </label>
+                                        <label class="custom-checkbox">
+                                            <input type="checkbox" name="alcohol">
+                                            <span>Коньяк</span>
+                                        </label>
+                                        <label class="custom-checkbox">
+                                            <input type="checkbox" name="alcohol">
+                                            <span>Виски</span>
+                                        </label>
+                                        <label class="custom-checkbox">
+                                            <input type="checkbox" name="alcohol">
+                                            <span>Водка</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <label class="form-group">
+                                <p class="section-description">Ваш контактный телефон</p>
+                                <input class="text-input" type="tel" placeholder="(999) 999-99-99">
+                            </label>
+
+                            <button type="submit" class="btn btn-custom form-btn btn-form">Отправить ответ</button>
+                        </form>
+                    </div>
+                    <div class="offset-md-1 col-md-5">
+                        <div class="form-image-wrapper">
+                            <img class="form-image" src="./img/foto.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+    </section>
+
+    <section class="section-creators">
+        <div class="container-fluid">
+            <div class="row justify-content-between">
+                <p class="col-md-2 m-0">SITE BY <a class="creator-link" href="#">INVITIKY</a></p>
+                <div class="messengers col-md-auto">
+                    <a href="#" class="me-1">
+                        <img src="./img/instagram-round-svgrepo-com.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="./img/earth-globe-svgrepo-com.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-rights">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-auto">
+                    <p>Все права защищены</p>
+                </div>
+                <div class="col-auto">
+                    <p>© Invitiky, 2023–2024</p>
+                </div>
+            </div>
+            <div>
+                <p>
+                    Настоящий сайт и его дочерние страницы являются объектами авторского права, исключительные права, на использование которых принадлежат «Invitiky».
+                    Копирование, размножение, распространение, перепечатка (целиком
+                    или частично), или иное использование материала без письменного разрешения автора
+                    не допускается. Любое нарушение прав автора будет преследоваться
+                    на основе российского и международного законодательства и влечет
+                    наступление гражданской, административной и уголовной ответственности в соответствии с действующим законодательством,
+                    Статья 1299 ГК РФ (Технические средства защиты авторских прав).
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./js/timer.js"></script>
+    <script src="./js/map.js"></script>
+</body>
+</html>

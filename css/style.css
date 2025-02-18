@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: 'All';
+    src: url(../font/lora-italic.ttf);
+}
+/*All*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  'All',Arial, serif;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+}
+
+section {
+    margin: 260px auto;
+}
+
+.container-custom {
+    max-width: 1000px;
+    width: 100%;
+    padding-right: calc(1.5rem * 0.5);
+    padding-left: calc(1.5rem * .5);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.btn-custom {
+    background-color: #fff;
+    box-shadow: 4px 4px 8px 0 rgba(142,142,142,0.1);
+    font-size: 20px;
+    color: #7e756c;
+    font-weight: 400;
+    padding: 13px 25px;
+    border-radius: 0;
+}
+
+.btn-custom:hover {
+    background-color: #fff;
+    color: #7e756c;
+
+}
+
+.section-heading {
+    line-height: 56px;
+    color: #7e756c;
+    font-size: 36px;
+    margin-bottom: 35px;
+    font-weight: 400;
+    text-transform: uppercase;
+
+}
+
+.section-description {
+    color: #000;
+    font-size: 20px;
+    font-family: "Roboto", serif;
+    font-weight: 100;
+}
+
+/* All */
+
+/* Date */
+
+.section-date-wrapper {
+    background-color: rgba(0,0,0,.5);
+    z-index: 2;
+}
+
+.section-date {
+    overflow: hidden;
+    position: relative;
+}
+
+.section-date-video {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    top: -130vh;
+    scale: 1.2;
+}
+
+.section-date-content {
+    padding: 150px 30px;
+    border: 1px #fff solid;
+    border-radius: 400px;
+    position: relative;
+}
+
+.section-date-content:before {
+    content: '';
+    position: absolute;
+    top: -50vh;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 50vh;
+    width: 1px;
+    background: #fff;
+}
+
+.section-date-content:after {
+    content: '';
+    position: absolute;
+    bottom: -50vh;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 50vh;
+    width: 1px;
+    background: #fff;
+}
+
+.section-date h1 {
+    line-height: 100%;
+    font-size: 9em;
+}
+
+.section-date h2:first-child {
+    font-size: 3em;
+}
+
+.date-img-wrapper {
+    overflow: hidden;
+    height: 75vh;
+}
+
+.date-image {
+    position: relative;
+    width: 100%;
+    top: -15vh;
+    position: relative;
+}
+
+.date {
+    position: absolute;
+    bottom: 10px;
+    left: 38%;
+    width: 35%;
+    font-size: 100px;
+    color: #7e756c;
+    font-weight: 400;
+}
+/* Date */
+
+
+/* Location */
+
+.section-location-wrapper {
+    background-color: #f0f0f0;;
+    padding: 85px 0;
+    box-shadow: 4px 4px 8px 0px rgba(142,142,142,0.1);
+}
+
+/* Location */
+
+/* Day's Timing  */
+
+.timing-image {
+    width: 100%;
+    max-height: 750px;
+    scale: 1.2;
+}
+
+.timing-image-wrapper {
+    overflow: hidden;
+    height: 100%;
+}
+
+.timing-list {
+    list-style: none;
+    padding-left: 5rem;
+}
+
+.timing-time {
+    color: #000;
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+
+}
+
+.timing-description {
+    color: #000;
+    font-family: "Roboto", Arial, serif;
+    font-size: 20px;
+    margin-bottom: 35px;
+    font-weight: 100;
+}
+
+/* Day's Timing  */
+
+/* Dress-code */
+
+.dress-code-color-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.dress-code-color {
+    width: 85px;
+    min-height: 65px;
+    height: 100%;
+
+    box-shadow: 4px 4px 8px 0 rgba(142,142,142,0.1);
+}
+
+.dress-code-color__1 {background-color: #fff0e6;}
+
+.dress-code-color__2 {background-color: #ead1c0;}
+
+.dress-code-color__3 {background-color: #e6c0be;}
+
+.dress-code-color__4 {background-color: #cd8d8a;}
+
+.dress-code-color__5 {background-color: #725847;}
+
+.dress-code-color__6 {background-color: #422f22;}
+
+.dress-code-wrapper {
+    height: 100%;
+    width: 100%;
+}
+
+.dress-code__image {
+    background-color: rgba(0,0,0,.5);
+    z-index: 2;
+    box-shadow: 6px 8px 10px 0 rgba(95,124,138,0);
+    position: relative;
+}
+
+.dress-code__image::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Dress-code */
+
+/* Wishes */
+
+.wishes-card {
+    background-color: #f0f0f0;
+    box-shadow: 4px 4px 8px 0 rgba(142,142,142,0.1);
+    margin: 15px auto;
+    padding: 35px;
+    position: relative;
+}
+
+.number-wishes-card {
+    position: absolute;
+    top: -100px;
+    right: 20px;
+    color: #7e756c;
+    font-size: 140px;
+    opacity: 0.1;
+}
+
+/* Wishes */
+
+/* Contacts */
+
+/* Contacts */
+
+/* Telegram */
+
+.tg-contact-wrapper {
+    background-color: #f0f0f0;
+    padding: 35px;
+}
+
+.tg-contact-button {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+/* Telegram */
+
+/* Timer*/
+
+.timer-block-time {
+    padding: 10px 30px;
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    max-width: 170px;
+}
+
+.timer-nums {
+    font-size: 44px;
+    font-weight: 400;
+    color: #7e756c;
+
+}
+.timer-words {
+    color: #000;
+    font-size: 20px;
+    font-family: "Roboto", serif;
+    font-weight: 100;
+}
+
+/* Timer*/
+
+/* Form */
+
+.form-image-wrapper {
+    overflow: hidden;
+    position: sticky;
+    top: 260px;
+    height: 100%;
+    max-height: 600px;
+}
+
+.form-image {
+    width: 100%;
+    top: -20%;
+    scale: 2.5;
+    position: relative;
+}
+
+.form-group {
+    margin-bottom: 48px;
+    width: 100%;
+}
+
+.form-group label {
+    width: 100%;
+}
+
+.text-input {
+    border: none;
+    border-bottom: 1px solid rgb(126, 117, 108);
+    width: 100%;
+    padding: 5px 0;
+    font-family: "Roboto", serif;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.text-input:focus-visible {
+    box-shadow: none;
+    outline: none;
+}
+
+.text-input::placeholder {
+    color: #7e756c;
+    opacity: .3;
+}
+
+label span {
+    color: #000;
+    font: 100 20px "Roboto", serif;
+    user-select: none;
+}
+
+/* для элемента input c type="checkbox" */
+.custom-checkbox>input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.custom-checkbox:hover {
+    cursor: pointer;
+}
+
+.custom-checkbox>span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* создание в label псевдоэлемента before со следующими стилями */
+.custom-checkbox>span::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #7e756c;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60%;
+}
+
+/* стили для чекбокса, находящегося в состоянии checked */
+.custom-checkbox>input:checked+span::before {
+    background-image: url("../img/checkboxChecked.svg");
+}
+
+/* для элемента input c type="radio" */
+.custom-radio>input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+/* создание в label псевдоэлемента  before со следующими стилями */
+.custom-radio>span::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    border: 2px solid #7e756c;
+    border-radius: 50%;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60% ;
+}
+
+/* стили для радиокнопки, находящейся в состоянии checked */
+.custom-radio>input:checked+span::before {
+    background-image: url("../img/radioChecked.svg");
+}
+
+.btn-form {
+    width: 100%;
+    color: #7e756c;
+    background-color: #f0f0f0;
+    text-transform: uppercase;
+    padding: 20px;
+    transition: 0.3s ease all;
+}
+
+.btn-form:hover {
+    color: #000000;
+    background-color: #f0f0f0;
+}
+
+/* Form */
+
+
+/* creators */
+    .section-creators {
+        background-color: #f0f0f0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 25px 60px;
+        color: #7e756c;
+        font-size: 14px;
+        margin: 0;
+    }
+
+    .creator-link {
+        color: #7e756c;
+        font-weight: 700;
+        text-decoration: none;
+    }
+
+
+
+/* creators */
+
+
+/* footer */
+
+.footer-rights {
+    font-size: 10px;
+    font-family: "Roboto", serif;
+    color: #000;
+
+    padding: 25px 80px;
+}
+
+/* footer */
