@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
+/*(max-width: 479px) (max-width: 639px) (max-width: 959px) (max-width: 1199px)*/
 @font-face {
     font-family: 'All';
     src: url(../font/lora-italic.ttf);
@@ -18,7 +18,7 @@ header {
 }
 
 section {
-    margin: 260px auto;
+    padding: 130px 0;
 }
 
 .container-custom {
@@ -62,6 +62,76 @@ section {
     font-family: "Roboto", serif;
     font-weight: 100;
 }
+
+body {
+    overflow-x: hidden; /* Убедимся, что горизонтальная прокрутка отключена */
+}
+
+.fade-in-right {
+    opacity: 0;
+    transform: translateX(20%);
+    transition: opacity 2s ease-in-out, transform 2s ease-in-out;
+}
+
+.fade-in-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 1.5s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+}
+/*(max-width: 479px) (max-width: 639px) (max-width: 959px) (max-width: 1199px)*/
+
+@media screen and (max-width: 1199px) {
+    .section-heading {
+        margin-bottom: 10px;
+    }
+    .section-description {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 959px) {
+    .hide-mobile_2 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 639px) {
+
+    section {
+        padding: 70px 0;
+    }
+
+    .hide-mobile_1 {
+        display: none;
+    }
+
+    .section-date-video {
+        top: 0;
+        scale: 2;
+    }
+    .section-date h2:first-child {
+
+    }
+
+    .section-heading {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .container {
+        max-width: 310px;
+    }
+}
+
 
 /* All */
 
@@ -144,6 +214,61 @@ section {
     color: #7e756c;
     font-weight: 400;
 }
+
+@media screen and (max-width: 1199px) {
+
+}
+
+@media screen and (max-width: 959px) {
+
+}
+
+@media screen and (max-width: 639px) {
+
+    .section-date-video {
+        top: 0;
+        scale: 2;
+    }
+
+    .section-date h1 {
+        font-size: 5em;
+    }
+
+    .section-date h2:first-child {
+        font-size: 28px;
+    }
+    .section-date h2 {
+        font-size: 20px;
+    }
+
+    .section-date-content {
+        padding: 300px 30px;
+    }
+    .date {
+        position: static;
+        width: 100%;
+        text-align: right;
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .section-date h1 {
+        font-size: 4em;
+    }
+
+    .section-date h2:first-child {
+        font-size: 20px;
+    }
+    .section-date h2 {
+        font-size: 18px;
+    }
+
+    .section-date-content {
+        padding: 300px 15px;
+    }
+
+}
 /* Date */
 
 
@@ -153,6 +278,45 @@ section {
     background-color: #f0f0f0;;
     padding: 85px 0;
     box-shadow: 4px 4px 8px 0px rgba(142,142,142,0.1);
+}
+
+.section-location {
+    position: relative;
+}
+
+.map-wrapper {
+    position: absolute;
+    top: 12%;
+    bottom: 12%;
+}
+
+#map {
+    position: sticky;
+    top: 160px;
+}
+
+@media screen and (max-width: 1199px) {
+
+}
+
+@media screen and (max-width: 959px) {
+
+}
+
+@media screen and (max-width: 639px) {
+    .section-location-wrapper {
+        padding: 40px 0;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    #map {
+        width: 100%;
+        height: 240px;
+    }
+    .map-wrapper {
+        position: static;
+    }
 }
 
 /* Location */
@@ -189,6 +353,24 @@ section {
     font-size: 20px;
     margin-bottom: 35px;
     font-weight: 100;
+}
+
+@media screen and (max-width: 1199px) {
+
+}
+
+@media screen and (max-width: 959px) {
+    .timing-list {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 639px) {
+
+}
+
+@media screen and (max-width: 479px) {
+
 }
 
 /* Day's Timing  */
@@ -244,6 +426,23 @@ section {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
+
+@media screen and (max-width: 1199px) {
+
+}
+
+@media screen and (max-width: 959px) {
+
+}
+
+@media screen and (max-width: 639px) {
+
+}
+
+@media screen and (max-width: 479px) {
+
+}
+
 /* Dress-code */
 
 /* Wishes */
@@ -252,7 +451,7 @@ section {
     background-color: #f0f0f0;
     box-shadow: 4px 4px 8px 0 rgba(142,142,142,0.1);
     margin: 15px auto;
-    padding: 35px;
+    padding: 35px 55px 35px 35px;
     position: relative;
 }
 
@@ -265,9 +464,100 @@ section {
     opacity: 0.1;
 }
 
+@media screen and (max-width: 1199px) {
+
+}
+
+@media screen and (max-width: 959px) {
+
+}
+
+@media screen and (max-width: 639px) {
+
+}
+
+@media screen and (max-width: 479px) {
+
+}
+
 /* Wishes */
 
 /* Contacts */
+
+
+.contacts-card {
+    height: 360px;
+    position: relative;
+    overflow: hidden;
+
+    background-size: cover;
+    background-position: center -73px;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    padding: 20px 35px;
+}
+
+.contacts-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+    z-index: 1;
+}
+
+.contacts-card.card_2 {
+    background-image: url("../img/unsplash_7HvXakRSPZo.png");
+}
+
+.contacts-card.card_1 {
+    background-image: url("../img/unsplash_RWDB9X1CvwA.png");
+}
+
+.contacts-card-content {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+}
+
+.contacts-btn {
+    font-size: 20px;
+    color: #7e756c;
+}
+
+.contacts-card-content .name {
+    font-size: 32px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.contacts-card-content .contact-post {
+    font-size: 20px;
+    font-family: "Roboto", Arial, serif;
+    font-weight: 100;
+}
+
+@media screen and (max-width: 1199px) {
+
+}
+
+@media screen and (max-width: 959px) {
+
+}
+
+@media screen and (max-width: 639px) {
+
+}
+
+@media screen and (max-width: 479px) {
+
+}
 
 /* Contacts */
 
@@ -282,6 +572,22 @@ section {
     display: flex;
     justify-content: end;
     align-items: center;
+}
+
+@media screen and (max-width: 1199px) {
+
+}
+
+@media screen and (max-width: 959px) {
+
+}
+
+@media screen and (max-width: 639px) {
+
+}
+
+@media screen and (max-width: 479px) {
+
 }
 
 /* Telegram */
@@ -310,6 +616,22 @@ section {
     font-weight: 100;
 }
 
+@media screen and (max-width: 1199px) {
+
+}
+
+@media screen and (max-width: 959px) {
+
+}
+
+@media screen and (max-width: 639px) {
+
+}
+
+@media screen and (max-width: 479px) {
+
+}
+
 /* Timer*/
 
 /* Form */
@@ -325,7 +647,7 @@ section {
 .form-image {
     width: 100%;
     top: -20%;
-    scale: 2.5;
+    scale: 1;
     position: relative;
 }
 
@@ -364,7 +686,6 @@ label span {
     user-select: none;
 }
 
-/* для элемента input c type="checkbox" */
 .custom-checkbox>input {
     position: absolute;
     z-index: -1;
@@ -381,7 +702,6 @@ label span {
     gap: 10px;
 }
 
-/* создание в label псевдоэлемента before со следующими стилями */
 .custom-checkbox>span::before {
     content: '';
     display: inline-block;
@@ -393,19 +713,16 @@ label span {
     background-size: 60%;
 }
 
-/* стили для чекбокса, находящегося в состоянии checked */
 .custom-checkbox>input:checked+span::before {
     background-image: url("../img/checkboxChecked.svg");
 }
 
-/* для элемента input c type="radio" */
 .custom-radio>input {
     position: absolute;
     z-index: -1;
     opacity: 0;
 }
 
-/* создание в label псевдоэлемента  before со следующими стилями */
 .custom-radio>span::before {
     content: '';
     display: inline-block;
@@ -419,7 +736,6 @@ label span {
     background-size: 60% ;
 }
 
-/* стили для радиокнопки, находящейся в состоянии checked */
 .custom-radio>input:checked+span::before {
     background-image: url("../img/radioChecked.svg");
 }
@@ -438,19 +754,37 @@ label span {
     background-color: #f0f0f0;
 }
 
+@media screen and (max-width: 1199px) {
+
+}
+
+@media screen and (max-width: 959px) {
+
+}
+
+@media screen and (max-width: 639px) {
+
+}
+
+@media screen and (max-width: 479px) {
+
+}
+
 /* Form */
 
 
 /* creators */
     .section-creators {
-        background-color: #f0f0f0;
         display: flex;
         justify-content: center;
         align-items: center;
+
+        background-color: #f0f0f0;
         padding: 25px 60px;
+        margin: 0;
+
         color: #7e756c;
         font-size: 14px;
-        margin: 0;
     }
 
     .creator-link {
@@ -459,7 +793,21 @@ label span {
         text-decoration: none;
     }
 
+@media screen and (max-width: 1199px) {
 
+}
+
+@media screen and (max-width: 959px) {
+
+}
+
+@media screen and (max-width: 639px) {
+
+}
+
+@media screen and (max-width: 479px) {
+
+}
 
 /* creators */
 
@@ -472,6 +820,22 @@ label span {
     color: #000;
 
     padding: 25px 80px;
+}
+
+@media screen and (max-width: 1199px) {
+
+}
+
+@media screen and (max-width: 959px) {
+
+}
+
+@media screen and (max-width: 639px) {
+
+}
+
+@media screen and (max-width: 479px) {
+
 }
 
 /* footer */
