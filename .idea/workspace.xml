@@ -5,18 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0986f762-92dc-4543-b54e-014d4dc65fab" name="Changes" comment="first verst">
-      <change afterPath="$PROJECT_DIR$/img/6367623315.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/6491218273_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/6531386067.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/6714431347.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/pexels-anna-nekrashe.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/unsplash_7HvXakRSPZo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/unsplash_RWDB9X1CvwA.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/map.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/map.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +24,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;ussurmaksim&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/ussurmaksim/weddingTemplate.git&quot;,
+    &quot;accountId&quot;: &quot;cf0121aa-c4fb-4402-82a5-8dc6a86697e7&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -41,19 +44,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\max\projescts\untitled1\img" />
@@ -85,6 +88,11 @@
       <workItem from="1739895026983" duration="7394000" />
       <workItem from="1739914014742" duration="762000" />
       <workItem from="1740065025075" duration="16343000" />
+      <workItem from="1740121158099" duration="483000" />
+      <workItem from="1740155584909" duration="846000" />
+      <workItem from="1740159520859" duration="260000" />
+      <workItem from="1740317199753" duration="7780000" />
+      <workItem from="1740325423126" duration="7026000" />
     </task>
     <task id="LOCAL-00001" summary="first verst">
       <option name="closed" value="true" />

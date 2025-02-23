@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-/*(max-width: 479px) (max-width: 639px) (max-width: 959px) (max-width: 1199px)*/
+
 @font-face {
     font-family: 'All';
     src: url(../font/lora-italic.ttf);
 }
 /*All*/
+
 * {
     margin: 0;
     padding: 0;
@@ -86,9 +87,8 @@ body {
 .fade-in.visible {
     opacity: 1;
 }
-/*(max-width: 479px) (max-width: 639px) (max-width: 959px) (max-width: 1199px)*/
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1200px) {
     .section-heading {
         margin-bottom: 10px;
     }
@@ -97,16 +97,15 @@ body {
     }
 }
 
-@media screen and (max-width: 959px) {
+@media screen and (max-width: 992px) {
     .hide-mobile_2 {
         display: none;
     }
 }
 
-@media screen and (max-width: 639px) {
-
+@media screen and (max-width: 768px) {
     section {
-        padding: 70px 0;
+        padding: 40px 0;
     }
 
     .hide-mobile_1 {
@@ -126,12 +125,11 @@ body {
     }
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 576px) {
     .container {
         max-width: 310px;
     }
 }
-
 
 /* All */
 
@@ -202,7 +200,6 @@ body {
     position: relative;
     width: 100%;
     top: -15vh;
-    position: relative;
 }
 
 .date {
@@ -215,16 +212,15 @@ body {
     font-weight: 400;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1200px) {
 
 }
 
-@media screen and (max-width: 959px) {
+@media screen and (max-width: 992px) {
 
 }
 
-@media screen and (max-width: 639px) {
-
+@media screen and (max-width: 768px) {
     .section-date-video {
         top: 0;
         scale: 2;
@@ -252,7 +248,7 @@ body {
     }
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 576px) {
     .section-date h1 {
         font-size: 4em;
     }
@@ -267,7 +263,6 @@ body {
     .section-date-content {
         padding: 300px 15px;
     }
-
 }
 /* Date */
 
@@ -277,7 +272,7 @@ body {
 .section-location-wrapper {
     background-color: #f0f0f0;;
     padding: 85px 0;
-    box-shadow: 4px 4px 8px 0px rgba(142,142,142,0.1);
+    box-shadow: 4px 4px 8px 0 rgba(142,142,142,0.1);
 }
 
 .section-location {
@@ -295,27 +290,36 @@ body {
     top: 160px;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1200px) {
 
 }
 
-@media screen and (max-width: 959px) {
+@media screen and (max-width: 992px) {
 
 }
 
-@media screen and (max-width: 639px) {
+@media screen and (max-width: 768px) {
     .section-location-wrapper {
         padding: 40px 0;
     }
+
+    #map {
+        width: 460px !important;
+        height: 240px !important;
+        top: 0;
+    }
+
+    .map-wrapper {
+        position: relative;
+        top: 0;
+    }
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 576px) {
     #map {
-        width: 100%;
-        height: 240px;
-    }
-    .map-wrapper {
-        position: static;
+        width: 308px !important;
+        height: 240px !important;
+        top: 0;
     }
 }
 
@@ -355,22 +359,28 @@ body {
     font-weight: 100;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1200px) {
 
 }
 
-@media screen and (max-width: 959px) {
+@media screen and (max-width: 992px) {
     .timing-list {
         padding: 0;
     }
 }
 
-@media screen and (max-width: 639px) {
+@media screen and (max-width: 768px) {
 
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 576px) {
+    .timing-time {
+        font-size: 18px;
+    }
 
+    .timing-description {
+        font-size: 16px;
+    }
 }
 
 /* Day's Timing  */
@@ -427,19 +437,35 @@ body {
 }
 
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1200px) {
 
 }
 
-@media screen and (max-width: 959px) {
+@media screen and (max-width: 992px) {
 
 }
 
-@media screen and (max-width: 639px) {
+@media screen and (max-width: 768px) {
 
+    .dress-code-color-list {
+        padding: 0;
+    }
+
+    .dress-code-color {
+        width: 69px;
+        height: 69px;
+        min-height: 69px;
+    }
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 576px) {
+
+
+    .dress-code-color {
+        width: 46px;
+        height: 46px;
+        min-height: 46px;
+    }
 
 }
 
@@ -464,19 +490,29 @@ body {
     opacity: 0.1;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1200px) {
 
 }
 
-@media screen and (max-width: 959px) {
+@media screen and (max-width: 992px) {
 
 }
 
-@media screen and (max-width: 639px) {
+@media screen and (max-width: 768px) {
+    .wishes-card {
+        padding: 15px 35px 15px 15px;
+    }
+
+    .number-wishes-card {
+        font-size: 80px;
+        top: -60px;
+        right: 10px;
+    }
 
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 576px) {
+
 
 }
 
@@ -508,7 +544,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,.5);
+    background-color: rgba(0,0,0,.4);
     z-index: 1;
 }
 
@@ -542,20 +578,75 @@ body {
     font-family: "Roboto", Arial, serif;
     font-weight: 100;
 }
-
-@media screen and (max-width: 1199px) {
-
-}
-
-@media screen and (max-width: 959px) {
+/*1199 lg*/
+@media screen and (max-width: 1200px) {
 
 }
+/*959 md*/
+@media screen and (max-width: 992px) {
+/**/
+    .contacts-card-content {
+        height: 100%;
+    }
 
-@media screen and (max-width: 639px) {
-
+    .contacts-card {
+        padding: 30px;
+        background-position: center -10px;
+    }
 }
+/*639 sm*/
+@media screen and (max-width: 768px) {
+    .contacts-card {
+        height: 300px;
+        padding: 20px;
+        margin-bottom: 15px;
 
-@media screen and (max-width: 479px) {
+        background-position: center -90px;
+        background-size: 100%;
+    }
+
+    .contacts-card-content .name {
+        font-size: 24px;
+    }
+
+    .contacts-card-content .contact-post {
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .contacts-btn {
+        font-size: 16px;
+        padding: 10px  16px;
+    }
+
+    .contacts-card-content {
+        height: auto;
+    }
+}
+/*479 xs*/
+@media screen and (max-width: 576px) {
+
+    .contacts-card {
+        height: 180px;
+        padding: 10px;
+        margin-bottom: 15px;
+
+        background-position: center -50px;
+    }
+
+    .contacts-card-content .name {
+        font-size: 24px;
+    }
+
+    .contacts-card-content .contact-post {
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .contacts-btn {
+        font-size: 16px;
+        padding: 10px  16px;
+    }
 
 }
 
@@ -574,20 +665,29 @@ body {
     align-items: center;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1200px) {
 
 }
 
-@media screen and (max-width: 959px) {
+@media screen and (max-width: 992px) {
 
 }
 
-@media screen and (max-width: 639px) {
+@media screen and (max-width: 768px) {
 
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 576px) {
+    .tg-contact-wrapper {
+        background-color: inherit;
+        padding: 0;
+    }
 
+    .tg-contact-button .btn-custom{
+        background-color: #f0f0f0;
+        width: 100%;
+        font-size: 16px;
+    }
 }
 
 /* Telegram */
@@ -609,6 +709,7 @@ body {
     color: #7e756c;
 
 }
+
 .timer-words {
     color: #000;
     font-size: 20px;
@@ -616,20 +717,37 @@ body {
     font-weight: 100;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1200px) {
 
 }
 
-@media screen and (max-width: 959px) {
+@media screen and (max-width: 992px) {
 
 }
 
-@media screen and (max-width: 639px) {
+@media screen and (max-width: 768px) {
 
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 576px) {
+    .section-timer .section-heading {
+        text-align: center;
+        line-height: 110%;
+    }
 
+    .timer-block-time {
+        width: 71px;
+        height: 72px;
+        padding: 5px;
+    }
+
+    .timer-nums {
+        font-size: 22px;
+    }
+
+    .timer-words {
+        font-size: 14px;
+    }
 }
 
 /* Timer*/
@@ -754,19 +872,44 @@ label span {
     background-color: #f0f0f0;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1200px) {
 
 }
 
-@media screen and (max-width: 959px) {
+@media screen and (max-width: 992px) {
 
 }
 
-@media screen and (max-width: 639px) {
+@media screen and (max-width: 768px) {
 
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 576px) {
+    .form-group {
+        margin-bottom: 24px;
+    }
+
+    .text-input {
+        font-size: 15px;
+    }
+
+    .text-input::placeholder {
+        opacity: .5;
+    }
+
+    .form .section-description {
+        margin-bottom: 8px;
+    }
+
+    label span {
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+    }
+
+    .custom-radio>span::before, .custom-checkbox>span::before {
+        font-size: 20px;
+    }
 
 }
 
@@ -793,20 +936,28 @@ label span {
         text-decoration: none;
     }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1200px) {
 
 }
 
-@media screen and (max-width: 959px) {
+@media screen and (max-width: 992px) {
 
 }
 
-@media screen and (max-width: 639px) {
+@media screen and (max-width: 768px) {
 
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 576px) {
+    .section-creators {
+        padding: 10px 15px;
+        font-size: 12px;
+    }
 
+    .messengers {
+        display: flex;
+        justify-content: right;
+    }
 }
 
 /* creators */
@@ -822,20 +973,23 @@ label span {
     padding: 25px 80px;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1200px) {
 
 }
 
-@media screen and (max-width: 959px) {
+@media screen and (max-width: 992px) {
 
 }
 
-@media screen and (max-width: 639px) {
+@media screen and (max-width: 768px) {
 
 }
 
-@media screen and (max-width: 479px) {
-
+@media screen and (max-width: 576px) {
+    .footer-rights {
+        font-size: 8px;
+        padding: 10px 10px;
+    }
 }
 
 /* footer */
