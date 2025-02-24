@@ -88,6 +88,9 @@ body {
     opacity: 1;
 }
 
+/*479 xs*//*639 sm*//*959 md*//*1199 lg*/
+/*576px*//*768px*//*992px*//*1200px*/
+
 @media screen and (max-width: 1200px) {
     .section-heading {
         margin-bottom: 10px;
@@ -101,9 +104,12 @@ body {
     .hide-mobile_2 {
         display: none;
     }
+    section {
+        padding: 60px 0;
+    }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
     section {
         padding: 40px 0;
     }
@@ -212,59 +218,119 @@ body {
     font-weight: 400;
 }
 
+/*479 xs*//*639 sm*//*959 md*//*1199 lg*/
+/*576px*//*768px*//*992px*//*1200px*/
+
 @media screen and (max-width: 1200px) {
+
+    .section-date-content {
+        padding: 250px 30px;
+    }
+
+    .section-date-video {
+        top: -40vh;
+        scale: 1.2;
+    }
+
+    .section-date h1 {
+        font-size: 8em;
+    }
+
+    .section-date h2:first-child {
+        font-size: 44px;
+    }
+    .section-date h2 {
+        font-size: 34px;
+    }
 
 }
 
 @media screen and (max-width: 992px) {
 
-}
+    .section-date h1 {
+        font-size: 6em;
+    }
 
-@media screen and (max-width: 768px) {
+    .section-date h2:first-child {
+        font-size: 32px;
+    }
+    .section-date h2 {
+        font-size: 24px;
+    }
+
     .section-date-video {
         top: 0;
-        scale: 2;
-    }
-
-    .section-date h1 {
-        font-size: 5em;
-    }
-
-    .section-date h2:first-child {
-        font-size: 28px;
-    }
-    .section-date h2 {
-        font-size: 20px;
+        scale: 1.5;
     }
 
     .section-date-content {
-        padding: 300px 30px;
+        padding: 40vh 30px;
     }
+
+    .date-img-wrapper {
+        position: absolute;
+        right: 415px;
+        width: 384px;
+    }
+
+    .section-invite {
+        position: relative;
+        overflow: hidden;
+    }
+
     .date {
-        position: static;
-        width: 100%;
-        text-align: right;
-        font-size: 40px;
-    }
-}
-
-@media screen and (max-width: 576px) {
-    .section-date h1 {
-        font-size: 4em;
+        font-size: 54px;
+        bottom: -120px;
     }
 
-    .section-date h2:first-child {
-        font-size: 20px;
-    }
-    .section-date h2 {
-        font-size: 18px;
     }
 
-    .section-date-content {
-        padding: 300px 15px;
+    @media screen and (max-width: 769px) {
+        .section-date-video {
+            scale: 2;
+        }
+
+        .section-date h1 {
+            font-size: 5em;
+        }
+
+        .section-date h2:first-child {
+            font-size: 28px;
+        }
+        .section-date h2 {
+            font-size: 20px;
+        }
+
+        .section-date-content {
+            padding: 300px 30px;
+        }
+
+        .date {
+            position: static;
+            width: 100%;
+            text-align: right;
+            font-size: 40px;
+        }
+
     }
-}
-/* Date */
+
+    @media screen and (max-width: 576px) {
+        .section-date h1 {
+            font-size: 4em;
+        }
+
+        .section-date h2:first-child {
+            font-size: 20px;
+        }
+        .section-date h2 {
+            font-size: 18px;
+        }
+
+        .section-date-content {
+            padding: 300px 15px;
+        }
+    }
+    /* Date */
 
 
 /* Location */
@@ -290,15 +356,41 @@ body {
     top: 160px;
 }
 
-@media screen and (max-width: 1200px) {
+/*479 xs*//*639 sm*//*959 md*//*1199 lg*/
+/*576px*//*768px*//*992px*//*1200px*/
 
+
+@media screen and (max-width: 1200px) {
+    #map {
+        width: 440px !important;
+        height: 340px !important;
+        top: 0;
+    }
+
+    .location-row {
+        justify-content: space-between;
+    }
 }
 
 @media screen and (max-width: 992px) {
+    .section-location-wrapper {
+        padding: 40px 0;
+    }
 
+    #map {
+        width: 100% !important;
+        height: 320px !important;
+        top: 0;
+    }
+
+    .map-wrapper {
+        position: relative;
+        top: 0;
+        width: 100%;
+    }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
     .section-location-wrapper {
         padding: 40px 0;
     }
@@ -359,6 +451,9 @@ body {
     font-weight: 100;
 }
 
+/*479 xs*//*639 sm*//*959 md*//*1199 lg*/
+/*576px*//*768px*//*992px*//*1200px*/
+
 @media screen and (max-width: 1200px) {
 
 }
@@ -369,7 +464,7 @@ body {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
 
 }
 
@@ -392,6 +487,7 @@ body {
     justify-content: space-between;
     align-items: center;
     list-style: none;
+    padding: 0;
 }
 
 .dress-code-color {
@@ -436,20 +532,24 @@ body {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
+/*479 xs*//*639 sm*//*959 md*//*1199 lg*/
+/*576px*//*768px*//*992px*//*1200px*/
 
 @media screen and (max-width: 1200px) {
 
+    .dress-code-color {
+        width: 66px;
+        min-height: 50px;
+    }
 }
 
 @media screen and (max-width: 992px) {
-
+    .dress-code-color {
+        width: 43px;
+    }
 }
 
-@media screen and (max-width: 768px) {
-
-    .dress-code-color-list {
-        padding: 0;
-    }
+@media screen and (max-width: 769px) {
 
     .dress-code-color {
         width: 69px;
@@ -459,7 +559,6 @@ body {
 }
 
 @media screen and (max-width: 576px) {
-
 
     .dress-code-color {
         width: 46px;
@@ -480,6 +579,9 @@ body {
     padding: 35px 55px 35px 35px;
     position: relative;
 }
+.wishes-card p {
+    margin: 0;
+}
 
 .number-wishes-card {
     position: absolute;
@@ -491,30 +593,51 @@ body {
 }
 
 @media screen and (max-width: 1200px) {
+    .wishes-card {
+        height: 160px;
+        padding: 30px 35px 30px 30px;
+        display: flex;
+        align-items: center;
+    }
 
+    .number-wishes-card {
+        font-size: 120px;
+        top: -90px;
+        right: 5px;
+    }
 }
 
 @media screen and (max-width: 992px) {
+    .wishes-card {
+        height: 180px;
+        padding: 20px 35px 20px 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    .number-wishes-card {
+        font-size: 100px;
+        top: -60px;
+        right: 5px;
+    }
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
     .wishes-card {
-        padding: 15px 35px 15px 15px;
+        padding: 10px 35px 10px 10px;
+        height: 108px;
     }
 
     .number-wishes-card {
         font-size: 80px;
         top: -60px;
-        right: 10px;
+        right: 5px;
     }
 
 }
 
-@media screen and (max-width: 576px) {
 
-
-}
 
 /* Wishes */
 
@@ -578,13 +701,15 @@ body {
     font-family: "Roboto", Arial, serif;
     font-weight: 100;
 }
-/*1199 lg*/
+
+/*479 xs*//*639 sm*//*959 md*//*1199 lg*/
+/*576px*//*768px*//*992px*//*1200px*/
+
 @media screen and (max-width: 1200px) {
 
 }
 /*959 md*/
 @media screen and (max-width: 992px) {
-/**/
     .contacts-card-content {
         height: 100%;
     }
@@ -595,7 +720,7 @@ body {
     }
 }
 /*639 sm*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
     .contacts-card {
         height: 300px;
         padding: 20px;
@@ -673,7 +798,7 @@ body {
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
 
 }
 
@@ -697,10 +822,9 @@ body {
 .timer-block-time {
     padding: 10px 30px;
     background-color: #fff;
-    width: 100%;
     display: flex;
     flex-direction: column;
-    max-width: 170px;
+    width: 170px;
 }
 
 .timer-nums {
@@ -718,15 +842,51 @@ body {
 }
 
 @media screen and (max-width: 1200px) {
+    .timer-block-time {
+        width: 140px;
+        /*height: 90px;*/
+        padding: 5px;
+    }
 
+    .timer-nums {
+        font-size: 36px;
+    }
+
+    .timer-words {
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width: 992px) {
+    .timer-block-time {
+        width: 143px;
+        /*height: 72px;*/
+        padding: 5px;
+    }
 
+    .timer-nums {
+        font-size: 32px;
+    }
+
+    .timer-words {
+        font-size: 16px;
+    }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
+    .timer-block-time {
+        width: 108px;
+        /*height: 72px;*/
+        padding: 5px;
+    }
 
+    .timer-nums {
+        font-size: 24px;
+    }
+
+    .timer-words {
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -737,7 +897,7 @@ body {
 
     .timer-block-time {
         width: 71px;
-        height: 72px;
+        /*height: 72px;*/
         padding: 5px;
     }
 
@@ -880,7 +1040,7 @@ label span {
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
 
 }
 
@@ -944,7 +1104,7 @@ label span {
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
 
 }
 
@@ -981,7 +1141,7 @@ label span {
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
 
 }
 
