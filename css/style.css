@@ -637,6 +637,12 @@ body {
 
 }
 
+@media screen and (max-width: 576px) {
+    .wishes-card {
+        padding: 10px 35px 10px 10px;
+        height: 164px;
+    }
+}
 
 
 /* Wishes */
@@ -706,7 +712,11 @@ body {
 /*576px*//*768px*//*992px*//*1200px*/
 
 @media screen and (max-width: 1200px) {
-
+    .contacts-card {
+        padding: 30px;
+        background-position: center -50px;
+        height: 300px;
+    }
 }
 /*959 md*/
 @media screen and (max-width: 992px) {
@@ -790,17 +800,6 @@ body {
     align-items: center;
 }
 
-@media screen and (max-width: 1200px) {
-
-}
-
-@media screen and (max-width: 992px) {
-
-}
-
-@media screen and (max-width: 769px) {
-
-}
 
 @media screen and (max-width: 576px) {
     .tg-contact-wrapper {
@@ -1032,12 +1031,63 @@ label span {
     background-color: #f0f0f0;
 }
 
+.iti.iti--allow-dropdown.iti--separate-dial-code {
+    width: 100%;
+}
+
+/* Стили для dropdown-меню */
+.iti__country-list {
+    max-height: 200px !important; /* Максимальная высота dropdown */
+    overflow-y: auto; /* Добавляем прокрутку, если содержимое превышает высоту */
+    margin: 0 !important; /* Убираем отступы */
+    padding: 0 !important; /* Убираем внутренние отступы */
+    left: 0 !important; /* Выравнивание по левому краю input */
+    top: 36px !important; /* Позиционирование под input */
+    border: 1px solid #ccc; /* Граница для dropdown */
+    border-radius: 4px; /* Скругленные углы */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Тень для эффекта */
+    z-index: 1000; /* Чтобы dropdown отображался поверх других элементов */
+}
+
+.iti--separate-dial-code .iti__selected-flag, .iti--allow-dropdown .iti__flag-container:hover .iti__selected-flag {
+    background-color: #fff;
+}
+
+/* Стили для элементов списка в dropdown */
+.iti__country-list .iti__country {
+    padding: 8px; /* Отступы внутри элементов списка */
+}
+
+.iti__country-list .iti__country:hover {
+    background-color: #f0f0f0; /* Цвет фона при наведении */
+}
+
+/* Стили для input-поля */
+.iti__input {
+    width: 100% !important; /* Ширина input равна ширине контейнера */
+    box-sizing: border-box; /* Чтобы padding не увеличивал размер */
+}
+
+/* Стили для флага и выбранной страны */
+.iti__flag-container {
+    margin-right: 5px; /* Отступ между флагом и номером */
+}
 @media screen and (max-width: 1200px) {
 
 }
 
 @media screen and (max-width: 992px) {
+    .form-image-wrapper {
+        top: 120px;
+    }
 
+    .form-group {
+        margin-bottom: 12px;
+    }
+
+    .custom-radio, .custom-checkbox {
+        margin-bottom: 10px;
+    }
 }
 
 @media screen and (max-width: 769px) {
@@ -1045,10 +1095,6 @@ label span {
 }
 
 @media screen and (max-width: 576px) {
-    .form-group {
-        margin-bottom: 24px;
-    }
-
     .text-input {
         font-size: 15px;
     }
@@ -1077,46 +1123,65 @@ label span {
 
 
 /* creators */
-    .section-creators {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+.section-creators {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-        background-color: #f0f0f0;
-        padding: 25px 60px;
-        margin: 0;
+    background-color: #f0f0f0;
+    padding: 25px 60px;
+    margin: 0;
 
-        color: #7e756c;
-        font-size: 14px;
-    }
+    color: #7e756c;
+    font-size: 14px;
+}
 
-    .creator-link {
-        color: #7e756c;
-        font-weight: 700;
-        text-decoration: none;
-    }
+.creator-link {
+    color: #7e756c;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.messengers {
+    display: flex;
+    justify-content: right;
+}
+
+.messengers img{
+    margin: 0 5px;
+}
+
 
 @media screen and (max-width: 1200px) {
 
 }
 
 @media screen and (max-width: 992px) {
+    .section-creators {
+        font-size: 12px;
+    }
+
+    .messengers img{
+        width: 30px;
+        margin: 0 5px;
+    }
 
 }
 
 @media screen and (max-width: 769px) {
-
+    .section-creators {
+        padding: 20px 15px;
+        font-size: 12px;
+    }
+    .messengers img{
+        width: 28px;
+        margin: 0 2px;
+    }
 }
 
 @media screen and (max-width: 576px) {
-    .section-creators {
-        padding: 10px 15px;
-        font-size: 12px;
-    }
-
-    .messengers {
-        display: flex;
-        justify-content: right;
+    .messengers img{
+        width: 25px;
     }
 }
 
@@ -1142,7 +1207,10 @@ label span {
 }
 
 @media screen and (max-width: 769px) {
-
+    .footer-rights {
+        font-size: 8px;
+        padding: 10px 30px;
+    }
 }
 
 @media screen and (max-width: 576px) {
